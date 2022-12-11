@@ -1,7 +1,7 @@
 .hero {
-
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bgd/bgd-mob.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,17 +11,11 @@
     padding-top: 118px;
     padding-bottom: 118px;
   }
-     transition: background 250ms $timing-function;
-
-  // @media screen and (max-width: 767.98px) {
-  //   // height:400px;
-  //   // max-width: 480px;
-  // }
+  transition: background 250ms $timing-function;
 
   text-align: center;
   @media screen and (min-width: 768px) {
     height: 400px;
-    
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -57,4 +51,61 @@
   @extend %button;
   min-width: 216px;
   min-height: 50px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bgd/bgd-mob@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bgd/bgd-tab.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bgd/bgd-tab@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bgd/bgd-desk.jpg');
+  }
+
+  .hero__section {
+    padding-bottom: 200px;
+
+    
+    @media screen and (max-width: 1199px) {
+     padding-top: 200px;
+
+    }
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/bgd/bgd-desk@2x.jpg');
+  }
 }
