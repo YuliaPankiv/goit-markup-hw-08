@@ -1,0 +1,89 @@
+.footer {
+  @extend %section;
+  background-color: $bd-color-footer;
+
+  & .container {
+    text-align: center;
+
+    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+          display: flex;
+    }
+  }
+}
+.footer__box {
+  text-decoration: none;
+  line-height: 1.7;
+  @media screen and (min-width: 1200px) {
+    // align-items: flex-start;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-mobile-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-mobile-wrapper {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-mobile-wrapper {
+    justify-content: center;
+    margin-right: 93px;
+
+  }
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .contact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: start;
+  }
+}
+.footer .contact__link {
+  @include font($fw: 400, $ls: 0.03em, $lh: 1.71);
+}
+
+.footer__social-box {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
+.footer .social-list__icon {
+  fill: $primary-write-color;
+}
+
+.footer .social-list__item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer__social-title {
+  @include subtitle($text: $primary-write-color, $mb: 20px);
+}
+
+.subscription__title {
+  @include subtitle($text: $primary-write-color, $mb: 20px);
+  @media screen and (min-width: 1200px) {
+}
+}

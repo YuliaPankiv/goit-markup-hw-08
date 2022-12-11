@@ -1,0 +1,131 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-form-label-text {
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms $timing-function;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  @media screen and (max-width:767px) {
+    line-height: 1.5;
+
+  }
+}
+.modal-form-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  transition: fill 250ms $timing-function;
+
+  .modal-form-input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  padding-top: 11px;
+  padding-left: 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms $timing-function;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.modal-form-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.checkbox-hidden {
+  position: absolute;
+  appearance: none;
+}
+.modal-form__icon-check {
+  position: absolute;
+  left: 14px;
+  width: 16px;
+  height: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: white;
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
+  transition: background 250ms $timing-function;
+}
+
+.checkbox-hidden:checked + .modal-form__icon-check {
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  border: transparent;
+  transition: background-image 250ms $timing-function;
+}
+
+.modal-form__checkbox-text {
+  display: block;
+  padding-left: 37px;
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+}
+.modal-form-link-conditions {
+  color: $accent-color;
+}
+
+.modal-form-btn {
+  @extend %button;
+  margin: 0 auto;
+  border: 0;
+}

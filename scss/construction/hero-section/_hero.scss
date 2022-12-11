@@ -1,0 +1,60 @@
+.hero {
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  letter-spacing: 0.06em;
+  &__section {
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+     transition: background 250ms $timing-function;
+
+  // @media screen and (max-width: 767.98px) {
+  //   // height:400px;
+  //   // max-width: 480px;
+  // }
+
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px 452px 280px;
+  }
+}
+
+.hero .container {
+  @include centredFlex($fd: column);
+}
+.hero__title {
+  margin-bottom: 30px;
+  font-size: 26px;
+
+  color: $primary-write-color;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: calc(42px / 26px);
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  @media screen and (max-width: 677.98px) {
+    @include font($fw: 900, $fs: 24px, $lh: 1.75, $ls: 00.06em);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1199px) {
+    @include font($fw: 900, $fs: 44px, $lh: 1.36em);
+    margin-bottom: 30px;
+  }
+}
+
+.hero-button {
+  @extend %button;
+  min-width: 216px;
+  min-height: 50px;
+}

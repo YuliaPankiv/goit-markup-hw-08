@@ -1,0 +1,30 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+z-index: 1;
+  background-color: transparent;
+
+  .icon-btn_close {
+    display: none;
+  }
+
+  &.is-open .icon-btn_close {
+    display: block;
+  }
+
+  &.is-open .icon-btn_menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+

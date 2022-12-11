@@ -1,0 +1,12 @@
+body {
+  @include font($fw: 400, $fs: 14px, $lh: 1.14, $ls: 0.03em);
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+
+}
+body.modal-open{
+  overflow: hidden;
+}
