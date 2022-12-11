@@ -249,7 +249,15 @@
         <h2 class="command__title">Наша команда</h2>
         <ul class="card-set">
           <li class="card-set__item">
-            <img class="card-set__img" src="./images/p-igor.jpg" alt="Ігор Дем'яненко" />
+            <picture>
+              <source srcset="./images/team/d-proddes.jpg 1x, ./images/team/d-proddes@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/t-proddes.jpg 1x, ./images/team/t-proddes@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/m-proddes.jpg 1x, ./images/team/m-proddes@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="team__list-img" src="./images/team/d-proddes.jpg" alt="Product Designer" />
+            </picture>
             <div class="card-set__wrapper">
               <h3 class="card-set__person-name">Ігор Дем'яненко</h3>
               <p class="card-set__person-work">Product Designer</p>
@@ -288,7 +296,15 @@
             </div>
           </li>
           <li class="card-set__item">
-            <img class="card-set__img" src="./images/p-olga.jpg" alt="Ольга Рєпіна" />
+            <picture>
+              <source srcset="./images/team/d-frontdev.jpg 1x, ./images/team/d-frontdev@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/t-frontdev.jpg 1x, ./images/team/t-frontdev@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/team/m-frontdev.jpg 1x, ./images/team/m-frontdev@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img class="team__list-img" src="./images/team/d-frontdev.jpg" alt="Frontend Developer" />
+            </picture>
             <div class="card-set__wrapper">
               <h3 class="card-set__person-name">Ольга Рєпіна</h3>
               <p class="card-set__person-work">Frontend Developer</p>
@@ -327,7 +343,13 @@
             </div>
           </li>
           <li class="card-set__item">
-            <img class="card-set__img" src="./images/p-mykola.jpg" alt="Микола Тарасов" />
+            <picture>
+              <source srcset="./images/team/d-mark.jpg 1x, ./images/team/d-mark@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/team/t-mark.jpg 1x, ./images/team/t-mark@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/team/m-mark.jpg 1x, ./images/team/m-mark@2x.jpg 2x" media="(max-width: 767px)" />
+              <img class="team__list-img" src="./images/team/d-mark.jpg" alt="Marketing" />
+            </picture>
 
             <div class="card-set__wrapper">
               <h3 class="card-set__person-name">Микола Тарасов</h3>
@@ -367,7 +389,12 @@
             </div>
           </li>
           <li class="card-set__item">
-            <img class="card-set__img" src="./images/p-myhailo.jpg" alt="Михайло Єрмаков" />
+            <picture>
+              <source srcset="./images/team/d-ui.jpg 1x, ./images/team/d-ui@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/team/t-ui.jpg 1x, ./images/team/t-ui@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/team/m-ui.jpg 1x, ./images/team/m-ui@2x.jpg 2x" media="(max-width: 767px)" />
+              <img class="team__list-img" src="./images/team/d-ui.jpg" alt="UI Designer" />
+            </picture>
             <div class="card-set__wrapper">
               <h3 class="card-set__person-name">Михайло Єрмаков</h3>
               <p class="card-set__person-work">UI Designer</p>
@@ -530,15 +557,15 @@
         </div>
       </div>
       <div class="contain-sent">
-      <p class="subscription__title">Підпишіться на розсилку</p>
+        <p class="subscription__title">Підпишіться на розсилку</p>
 
-      <form class="subscription" aria-label="Form subscribe to the newsletter">
-        <input type="email" name="user-email" class="subscription__input" placeholder="E-mail">
-        <button type="submit" class="subscription__btn">
-          Підписатися
-          <span class="subscription__icon"></span></button>
-      </form>
-    </div>
+        <form class="subscription" aria-label="Form subscribe to the newsletter">
+          <input type="email" name="user-email" class="subscription__input" placeholder="E-mail">
+          <button type="submit" class="subscription__btn">
+            Підписатися
+            <span class="subscription__icon"></span></button>
+        </form>
+      </div>
 
     </div>
   </footer>
