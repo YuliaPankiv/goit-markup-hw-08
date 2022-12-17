@@ -1,5 +1,16 @@
 .header {
   position: relative;
+  // .header {
+    @media screen and (min-width:767px) {
+       background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    }
+   
+// }
 
   @media screen and (min-width: 768px) {
     .container {
@@ -49,7 +60,7 @@
     padding-top: 21px;
     padding-bottom: 21px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -74,6 +85,16 @@
     }
   }
 }
+.header__contact{
+ 
+  @media screen and (max-width:479px) {
+    .contact__link{
+      font-size: 7.8vw;
+
+    }
+}
+}
+
 
 @media screen and (max-width: 767px) {
   .main-nav .social-list {
@@ -100,4 +121,9 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+@media screen and (max-width: 479px) {
+  .mobile-menu__link {
+    font-size: 3.3vw;
+  }
 }

@@ -1,5 +1,7 @@
 .menu-container {
   color: #212121;
+left: 0;
+width: 100%;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -9,14 +11,12 @@
 
     position: absolute;
     top: 0;
-    width: 100%;
 
     &.is-open {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 796px;
-      max-width: 480px;
+      height: 100vh;
     }
   }
 

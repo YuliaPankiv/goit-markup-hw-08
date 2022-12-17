@@ -1,10 +1,10 @@
 .footer {
-  @extend %section;
-  background-color: $bd-color-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+   background-color: $bd-color-footer;
 
   & .container {
     text-align: center;
-
     align-items: baseline;
     @media screen and (min-width: 1200px) {
       text-align: start;
@@ -26,10 +26,10 @@
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1199px) {
   .footer-mobile-wrapper {
     margin-bottom: 60px;
   }

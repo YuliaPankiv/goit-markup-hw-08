@@ -328,12 +328,12 @@ img {
   background-color: #188ce8;
 }
 
-.portfolio, .footer, .customers, .command, .work, .feature {
+.portfolio, .customers, .command, .work, .feature {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .portfolio, .footer, .customers, .command, .work, .feature {
+  .portfolio, .customers, .command, .work, .feature {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -499,6 +499,16 @@ body.modal-open {
 .header {
   position: relative;
 }
+@media screen and (min-width: 767px) {
+  .header {
+    background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   .header .container {
     position: fixed;
@@ -580,6 +590,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .header__contact .contact__link {
+    font-size: 7.8vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .main-nav .social-list {
     justify-content: start;
@@ -607,6 +623,11 @@ body.modal-open {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__link {
+    font-size: 3.3vw;
+  }
+}
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -635,6 +656,8 @@ body.modal-open {
 
 .menu-container {
   color: #212121;
+  left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -644,14 +667,12 @@ body.modal-open {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     position: absolute;
     top: 0;
-    width: 100%;
   }
   .menu-container.is-open {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 796px;
-    max-width: 480px;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 768px) {
@@ -727,6 +748,7 @@ body.modal-open {
 }
 
 .hero {
+  margin: auto;
   background-color: #c4c4c4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgd/bgd-mob.jpg");
   background-size: cover;
@@ -749,6 +771,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    height: 600px;
     padding-top: 200px 452px 280px;
   }
 }
@@ -791,8 +814,13 @@ body.modal-open {
 }
 
 .hero-button {
-  min-width: 216px;
+  min-width: 200px;
   min-height: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-button {
+    min-width: 216px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -808,6 +836,16 @@ body.modal-open {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bgd/bgd-tab@2x.jpg");
+  }
+}
+@media screen and (min-width: 950px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/bgd/bgd-desk.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 950px), screen and (min-resolution: 192dpi) and (min-width: 950px), screen and (min-resolution: 2dppx) and (min-width: 950px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/bgd/bgd-desk@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1319,6 +1357,8 @@ body.modal-open {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .footer .container {
@@ -1347,10 +1387,9 @@ body.modal-open {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-mobile-wrapper {
     margin-bottom: 60px;
   }
@@ -1445,6 +1484,12 @@ body.modal-open {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+@media screen and (max-width: 480px) {
+  .subscription__input {
+    margin-right: 12px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1199px) {
   .subscription__input {
     margin-bottom: 20px;
@@ -1453,6 +1498,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .subscription__input {
     margin-right: 12px;
+    width: 358px;
   }
 }
 
