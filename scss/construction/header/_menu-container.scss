@@ -1,7 +1,7 @@
 .menu-container {
   color: #212121;
-left: 0;
-width: 100%;
+  left: 0;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -17,6 +17,7 @@ width: 100%;
       flex-direction: column;
       justify-content: space-between;
       height: 100vh;
+      z-index: 1;
     }
   }
 

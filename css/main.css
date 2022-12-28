@@ -673,6 +673,7 @@ body.modal-open {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
